@@ -1,0 +1,12 @@
+2017-07-08 15:58:14.6828|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:50073/  0
+2017-07-08 15:58:14.6828|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50073/  
+2017-07-08 15:58:14.9358|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 318.364ms 200 
+2017-07-08 15:58:15.1203|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 463.6587ms 404 text/plain
+2017-07-08 15:58:15.1203|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50073/favicon.ico  
+2017-07-08 15:58:15.1343|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 33.5407ms 404 text/plain
+2017-07-08 15:58:22.8176|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:50073/api/tasks/4/relatedprojects  
+2017-07-08 15:58:23.0187|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method FirstApp.Controllers.RelatedProjectsController.GetRelatedProjects (FirstApp) with arguments (4) - ModelState is Valid
+2017-07-08 15:58:23.0516|FATAL|FirstApp.Controllers.RelatedProjectsController|Exception while getting points of interest for task with id: 4.
+2017-07-08 15:58:23.0827|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-07-08 15:58:23.1011|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action FirstApp.Controllers.RelatedProjectsController.GetRelatedProjects (FirstApp) in 186.0009ms
+2017-07-08 15:58:23.1011|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 292.8972ms 500 text/plain; charset=utf-8

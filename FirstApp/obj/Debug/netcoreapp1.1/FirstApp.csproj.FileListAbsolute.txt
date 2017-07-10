@@ -1,0 +1,10 @@
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.deps.json
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.json
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.dev.json
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.dll
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.pdb
+D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.csprojResolveAssemblyReference.cache
+D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.AssemblyInfo.cs
+D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.dll
+D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.pdb
+D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\nlog.config
