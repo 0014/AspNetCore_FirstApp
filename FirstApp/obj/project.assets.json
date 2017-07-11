@@ -10863,10 +10863,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\FirstApp\\FirstApp\\FirstApp.csproj",
+      "projectUniqueName": "D:\\Workspace\\AspNetCore_FirstApp\\FirstApp\\FirstApp.csproj",
       "projectName": "FirstApp",
-      "projectPath": "D:\\Workspace\\FirstApp\\FirstApp\\FirstApp.csproj",
-      "outputPath": "D:\\Workspace\\FirstApp\\FirstApp\\obj\\",
+      "projectPath": "D:\\Workspace\\AspNetCore_FirstApp\\FirstApp\\FirstApp.csproj",
+      "outputPath": "D:\\Workspace\\AspNetCore_FirstApp\\FirstApp\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

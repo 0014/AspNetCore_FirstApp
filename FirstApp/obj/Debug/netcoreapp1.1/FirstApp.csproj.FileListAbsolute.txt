@@ -8,3 +8,13 @@ D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.AssemblyInfo.cs
 D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.dll
 D:\Workspace\FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.pdb
 D:\Workspace\FirstApp\FirstApp\bin\Debug\netcoreapp1.1\nlog.config
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\nlog.config
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.deps.json
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.json
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.dev.json
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.dll
+D:\Workspace\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.pdb
+D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.csprojResolveAssemblyReference.cache
+D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.AssemblyInfo.cs
+D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.dll
+D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.pdb

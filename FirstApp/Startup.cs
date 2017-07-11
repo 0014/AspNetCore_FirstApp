@@ -40,6 +40,8 @@ namespace FirstApp
             services.AddTransient<IMailService, CloudMailService>();
 #endif
             services.AddDbContext<TaskInfoContext>(o => o.UseSqlServer(Startup.Configuration["connectionStrings:connectionString"]));
+
+            services.AddScoped<ITaskInfoRepository, TaskInfoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
