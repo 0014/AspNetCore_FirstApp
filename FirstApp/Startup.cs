@@ -68,6 +68,11 @@ namespace FirstApp
             app.UseStatusCodePages();
 
             app.UseMvc();
+
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Entities.Task, Models.TaskWithoutRelatedProjectsDto>
+            });
             //app.Run(async (context) =>
             //{
             //    await context.Response.WriteAsync("Hello World!");

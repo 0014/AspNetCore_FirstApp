@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace FirstApp.Services
 {
@@ -38,6 +39,11 @@ namespace FirstApp.Services
         {
             return _context.RelatedProjects.FirstOrDefault(t => t.Id == taskId && t.Id == relatedProjectId);
             
+        }
+
+        public bool TaskExists(int taskId)
+        {
+            return _context.Tasks.Any(t => t.Id == taskId);
         }
     }
 }

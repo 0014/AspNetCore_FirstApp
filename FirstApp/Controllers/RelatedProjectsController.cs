@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace FirstApp.Controllers
@@ -13,12 +14,14 @@ namespace FirstApp.Controllers
     {
         private ILogger<RelatedProjectsController> _logger;
         private IMailService _mailService;
+        private ITaskInfoRepository _taskInfoRepository;
 
         public RelatedProjectsController(ILogger<RelatedProjectsController> logger,
-            IMailService mailService)
+            IMailService mailService, ITaskInfoRepository taskInfoRepository)
         {
             _logger = logger;
             _mailService = mailService;
+            _taskInfoRepository = taskInfoRepository;
         }
 
         [HttpGet("{taskId}/relatedprojects")]
@@ -26,15 +29,28 @@ namespace FirstApp.Controllers
         {
             try
             {
-                var task = TasksDataStore.Current.Tasks.FirstOrDefault(t => t.Id == taskId);
+                //var task = TasksDataStore.Current.Tasks.FirstOrDefault(t => t.Id == taskId);
 
-                if (task == null)
+                if (!_taskInfoRepository.TaskExists(taskId))
                 {
                     _logger.LogInformation($"Task with id {taskId} wasnt found when accessing the related projects.");
                     return NotFound();
                 }
 
-                return Ok(task.RelatedProjects);
+                var relatedProjectsResult = new List<RelatedProjectsDto>();
+
+                var relatedProjects = _taskInfoRepository.GetRelatedProjects(taskId);
+                foreach (var relatedProject in relatedProjects)
+                {
+                    relatedProjectsResult.Add(new RelatedProjectsDto
+                    {
+                        Id = relatedProject.Id,
+                        Name = relatedProject.Name,
+                        Description = relatedProject.Description
+                    });
+                }
+
+                return Ok(relatedProjectsResult);
             }
             catch (Exception e)
             {
@@ -46,21 +62,44 @@ namespace FirstApp.Controllers
         [HttpGet("{taskId}/relatedprojects/{projectId}", Name = "GetRelatedProject")]
         public IActionResult GetRelatedProject(int taskId, int projectId)
         {
-            var task = TasksDataStore.Current.Tasks.FirstOrDefault(t => t.Id == taskId);
 
-            if (task == null)
+            if (!_taskInfoRepository.TaskExists(taskId))
             {
                 return NotFound();
             }
 
-            var relatedProject = task.RelatedProjects.FirstOrDefault(r => r.Id == projectId);
+            var relatedProject = _taskInfoRepository.GetRelatedProject(taskId, projectId);
 
             if (relatedProject == null)
             {
                 return NotFound();
             }
 
-            return Ok(relatedProject);
+            var relatedProjectResult = new RelatedProjectsDto
+            {
+                Id = relatedProject.Id,
+                Name = relatedProject.Name,
+                Description = relatedProject.Description
+            };
+
+            return Ok(relatedProjectResult);
+            //var task = TasksDataStore.Current.Tasks.FirstOrDefault(t => t.Id == taskId);
+
+            //if (task == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //var relatedProject = task.RelatedProjects.FirstOrDefault(r => r.Id == projectId);
+
+            //if (relatedProject == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //return Ok(relatedProject);
+
+
         }
 
         [HttpPost("{taskId}/relatedprojects")]

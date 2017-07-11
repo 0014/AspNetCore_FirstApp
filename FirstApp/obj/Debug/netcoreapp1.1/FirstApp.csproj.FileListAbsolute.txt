@@ -18,3 +18,13 @@ D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.cspro
 D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.AssemblyInfo.cs
 D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.dll
 D:\Workspace\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.pdb
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\nlog.config
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.deps.json
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.json
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.runtimeconfig.dev.json
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.dll
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\bin\Debug\netcoreapp1.1\FirstApp.pdb
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.AssemblyInfo.cs
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.dll
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.pdb
+C:\Users\Arif.Gencosmanoglu.DOVER\Documents\C#\AspNetCore_FirstApp\FirstApp\obj\Debug\netcoreapp1.1\FirstApp.csprojResolveAssemblyReference.cache

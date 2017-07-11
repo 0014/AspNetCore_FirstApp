@@ -5,6 +5,8 @@ namespace FirstApp.Services
 {
     public interface ITaskInfoRepository
     {
+        bool TaskExists(int taskId);
+
         IEnumerable<Task> GetTasks();
 
         Task GetTask(int taskId, bool includeRelatedProjects);
